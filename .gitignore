@@ -1,0 +1,9 @@
+
+# Model files 
+*.pkl
+
+# Virtual environment
+venv/
+.env/
+
+.env
