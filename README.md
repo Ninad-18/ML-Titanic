@@ -62,3 +62,7 @@ A simple UI to predict survival using Random Forest.
 ### Run the app:
 ```bash
 streamlit run app.py
+
+---
+
+Clone the repo using :- git clone https://github.com/Ninad-18/ML-Titanic
