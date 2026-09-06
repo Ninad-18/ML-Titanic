@@ -9,9 +9,7 @@ import os
 load_dotenv()
 model_path = os.getenv("MODEL_PATH")
 
-# =========================
 # LOAD MODEL 
-# =========================
 model = joblib.load(model_path)
 
 
