@@ -13,17 +13,15 @@ model_path = os.getenv("MODEL_PATH")
 model = joblib.load(model_path)
 
 
-# =========================
+
 # PAGE CONFIG
-# =========================
 st.set_page_config(page_title="Titanic Survival Predictor", layout="centered")
 
 st.title("🚢 Titanic Survival Prediction")
 st.write("Enter passenger details to predict survival probability.")
 
-# =========================
+
 # USER INPUTS
-# =========================
 pclass = st.selectbox("Passenger Class", [1, 2, 3])
 sex = st.selectbox("Sex", ["male", "female"])
 age = st.slider("Age", 0, 80, 25)
