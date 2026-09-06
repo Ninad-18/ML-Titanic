@@ -30,17 +30,14 @@ parch = st.number_input("Parents / Children aboard", 0, 10, 0)
 fare = st.number_input("Fare", 0.0, 600.0, 32.0)
 embarked = st.selectbox("Embarked Port", ["C", "Q", "S"])
 
-# =========================
+
 # ENCODING USER INPUT
-# =========================
 sex_encoded = 1 if sex == "male" else 0
 
 embarked_Q = 1 if embarked == "Q" else 0
 embarked_S = 1 if embarked == "S" else 0
 
-# =========================
 # CREATE INPUT ARRAY
-# =========================
 input_data = np.array([[
     pclass,
     age,
@@ -53,9 +50,8 @@ input_data = np.array([[
 ]])
 
 
-# =========================
+
 # PREDICTION
-# =========================
 if st.button("Predict Survival"):
     prediction = model.predict(input_data)[0]
     probability = model.predict_proba(input_data)[0][1] * 100  # convert to %
